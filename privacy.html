@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – Keepmark</title>
+  <meta name="description" content="Keepmark does not collect, sell or share any personal data. Privacy policy for Keepmark for Android and Keepmark for browsers." />
+  <meta name="theme-color" content="#172552" />
+  <link rel="canonical" href="https://keepmark.github.io/privacy.html" />
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="img/keepmark.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="hero slim">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="./"><img src="img/icon.svg" alt="" width="36" height="36" />Keepmark</a>
+      <div class="nav-links">
+        <a href="#android">Android</a>
+        <a href="#browsers">Browsers</a>
+        <a href="./">Home</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+  <h1>Privacy Policy</h1>
+  <p>Last updated: 11 October 2026</p>
+
+  <p>
+    Keepmark syncs your bookmarks, end-to-end encrypted, through an
+    xBrowserSync-compatible sync service that you choose. This page covers
+    Keepmark for Android (<code>com.keepmark.mobile</code>) and Keepmark for
+    browsers (Firefox, Chrome, Edge, Brave).
+  </p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>Keepmark does not collect, sell or share any personal data.</li>
+    <li>There is no analytics, telemetry, advertising, crash reporting or tracking of any kind, and no third-party SDK that does so.</li>
+    <li>Your bookmarks are encrypted on your device before they leave it.</li>
+    <li>Keepmark does not create accounts and does not ask for your name or email.</li>
+    <li>The browser extension never reads or modifies the web pages you visit.</li>
+  </ul>
+
+  <h2>What leaves your device</h2>
+  <p>
+    Only when sync is enabled, Keepmark sends your bookmarks to the sync service
+    you selected (the official xBrowserSync service, a community host or your own
+    server). Before sending, your bookmarks are encrypted on the device with
+    AES-GCM, using a key derived from your password with PBKDF2-SHA256.
+  </p>
+  <p>The sync service therefore stores only:</p>
+  <ul>
+    <li>the encrypted bookmark data (ciphertext it cannot read),</li>
+    <li>a random sync ID,</li>
+    <li>timestamps and version information needed for sync.</li>
+  </ul>
+  <p>
+    Your password and your bookmarks in readable form are never sent anywhere.
+    The developer of Keepmark does not receive any of this data. The sync service
+    you choose is operated by its own provider (or by you), and its own privacy
+    policy applies. As with any server, it can see the IP address your requests
+    come from; Keepmark does not send it any other information about you or your
+    device. Keepmark contacts no other server.
+  </p>
+
+  <h2 id="android">Keepmark for Android: what stays on your device</h2>
+  <ul>
+    <li>Your bookmarks, in a local database encrypted with SQLCipher.</li>
+    <li>The sync ID and the key derived from your password (never the password itself), in Android secure storage backed by the Android KeyStore.</li>
+    <li>Settings, sync state and a local log of recent events. Sync IDs are truncated and secrets are never written to the log.</li>
+    <li>Encrypted safety backups taken before destructive operations.</li>
+  </ul>
+  <p>
+    Android cloud backup of the app data is disabled. Backup files and logs leave
+    the app only when you export or share them yourself, to a destination you
+    pick. Uninstalling the app deletes all local data.
+  </p>
+  <p><strong>Permissions.</strong> Internet and network state: to reach the sync
+    service you choose and to know when you are offline. Biometrics: for the
+    optional app lock with fingerprint or device PIN; your fingerprint is handled
+    by Android and never reaches Keepmark.</p>
+
+  <h2 id="browsers">Keepmark for browsers: what stays on your device</h2>
+  <p>Keepmark stores the following locally in your browser's extension storage:</p>
+  <ul>
+    <li>settings (for example the selected service URL and language),</li>
+    <li>the sync ID and the key derived from your password (never the password itself),</li>
+    <li>sync state and an activity log of recent sync events,</li>
+    <li>up to 5 encrypted safety backups taken before destructive operations.</li>
+  </ul>
+  <p>
+    Backup files are created only when you export a backup, and are saved to your
+    device. Removing the extension deletes the local data.
+  </p>
+  <p><strong>Permissions.</strong> Keepmark asks only for what sync needs:
+    bookmarks, storage, alarms (periodic check for changes), notifications
+    (conflicts, removed sync), downloads (backup export) and, on Chromium-based
+    browsers, offscreen (theme detection for the toolbar icon) and network access
+    to reach the sync service you choose. There are no content scripts and no
+    remote code.</p>
+
+  <h2>Children</h2>
+  <p>Keepmark is not directed at children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>
+    Changes to this policy are published on this page and in the public
+    repositories
+    <a href="https://github.com/Keepmark/KeepmarkMobile/blob/master/PRIVACY.md">KeepmarkMobile</a> and
+    <a href="https://github.com/Keepmark/KeepmarkApp/blob/master/PRIVACY.md">KeepmarkApp</a>.
+  </p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:keepmark@proton.me">keepmark@proton.me</a></p>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <p><strong style="color:#fff">Keepmark</strong> · independent, compatible with the xBrowserSync protocol.</p>
+      <p>Not affiliated with or endorsed by xBrowserSync.</p>
+    </div>
+    <div class="foot-links">
+      <a href="./">Home</a>
+      <a href="https://github.com/Keepmark">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

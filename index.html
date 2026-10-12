@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keepmark – encrypted bookmark sync, compatible with xBrowserSync</title>
+  <meta name="description" content="Keepmark keeps the same bookmarks on all your browsers and your Android phone, end-to-end encrypted. Works with any xBrowserSync service and the official xBrowserSync apps: nothing to migrate." />
+  <meta name="theme-color" content="#172552" />
+  <link rel="canonical" href="https://keepmark.github.io/" />
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="img/keepmark.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="preload" href="fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Keepmark – encrypted bookmark sync" />
+  <meta property="og:description" content="Your bookmarks in every browser and on Android, end-to-end encrypted. Compatible with xBrowserSync: nothing to migrate." />
+  <meta property="og:url" content="https://keepmark.github.io/" />
+  <meta property="og:image" content="https://keepmark.github.io/img/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="./"><img src="img/icon.svg" alt="" width="36" height="36" />Keepmark</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#android">Android</a>
+        <a href="#browsers">Browsers</a>
+        <a href="#server">Server</a>
+        <a href="#get">Get it</a>
+      </div>
+    </nav>
+
+    <div class="hero-body">
+      <div>
+        <h1>Your bookmarks, everywhere. <em>Readable only by you.</em></h1>
+        <p class="lead">
+          Keepmark keeps the same bookmarks on all your browsers and your Android
+          phone. Everything is encrypted on your device before it leaves: the
+          server stores only ciphertext, and your password never leaves the device.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#get">Get Keepmark</a>
+          <a class="btn btn-ghost" href="https://github.com/Keepmark">View on GitHub</a>
+        </div>
+        <p class="hero-note">Free · No account · No telemetry · 9 languages</p>
+      </div>
+      <div class="hero-art">
+        <img src="img/ecosystem.webp" width="1600" height="800"
+             alt="Keepmark in a browser and on an Android phone, showing the same bookmarks" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="compat">
+  <div class="wrap">
+    <p>Already using xBrowserSync? Keepmark opens your existing sync on any xBrowserSync service. Nothing to migrate.</p>
+  </div>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Keepmark</span>
+      <h2>Sync you can trust with your data</h2>
+      <p class="lead">Built for people who want their bookmarks private and never want to lose one by surprise.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>End-to-end encrypted</h3>
+        <p>PBKDF2-SHA256 and AES-GCM on your device. The service that stores your sync sees only ciphertext.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M21 3l-7 7"/><path d="M8 21H3v-5"/><path d="M3 21l7-7"/></svg></div>
+        <h3>Compatible with xBrowserSync</h3>
+        <p>Works with the official service, community hosts or your own server, and with the official xBrowserSync apps, both ways.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
+        <h3>No silent overwrites</h3>
+        <p>When two devices disagree, you choose: take remote, upload local, or merge, with a preview of the counts first.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 3v6h6"/></svg></div>
+        <h3>Safety backups</h3>
+        <p>An encrypted snapshot is taken automatically before every destructive step. Restore it in one tap.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M4 16V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Duplicate cleanup</h3>
+        <p>Find links saved more than once and remove them in bulk. The last copy of each link is always kept.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+        <h3>Move between services</h3>
+        <p>Move your bookmarks to another server, into a new or existing sync, and change your sync password.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="android" class="alt">
+  <div class="wrap product">
+    <div class="product-text">
+      <span class="eyebrow">Keepmark for Android</span>
+      <h2>Your bookmarks in your pocket</h2>
+      <p class="lead">A native app for Android 10 and later, built around privacy.</p>
+      <ul class="checks">
+        <li><strong>Encrypted on the phone too:</strong> local database with SQLCipher, credentials in the Android KeyStore.</li>
+        <li><strong>App lock</strong> with fingerprint or device PIN, with a relock time you choose.</li>
+        <li><strong>Share to Keepmark</strong> from any app: the add form opens already filled in.</li>
+        <li><strong>Fast search</strong>, pinned bookmarks, clickable breadcrumb, folders first.</li>
+        <li><strong>Encrypted backup files</strong> that also open in the browser extension.</li>
+      </ul>
+      <div class="links">
+        <a class="btn btn-solid" href="#get-android">Get the Android app</a>
+      </div>
+    </div>
+    <div class="phones">
+      <img src="img/android-01-browse.webp" width="540" height="960" alt="Browsing bookmark folders" loading="lazy" />
+      <img src="img/android-03-connect.webp" width="540" height="960" alt="Connecting a sync" loading="lazy" />
+      <img src="img/android-05-backup.webp" width="540" height="960" alt="Encrypted backups" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<section id="browsers">
+  <div class="wrap product reverse">
+    <div class="product-text">
+      <span class="eyebrow">Keepmark for browsers</span>
+      <h2>Set it and forget it</h2>
+      <p class="lead">An extension for Chrome, Edge and Brave (Manifest V3) and for Firefox.</p>
+      <ul class="checks">
+        <li><strong>Automatic sync</strong> of toolbar, menu and other bookmarks, plus a “Sync now” button.</li>
+        <li><strong>Toolbar icon</strong> that follows your theme and shows at a glance whether you are in sync.</li>
+        <li><strong>Clear conflicts</strong> with a merge preview, never resolved behind your back.</li>
+        <li><strong>No access</strong> to the pages you visit.</li>
+      </ul>
+      <div class="links">
+        <a class="btn btn-solid" href="https://chromewebstore.google.com/detail/jaaekkbgpeiikepahjelfbkfgpjphbhb">Chrome Web Store</a>
+        <a class="btn btn-line" href="https://github.com/Keepmark/KeepmarkApp/releases/latest">Firefox (.xpi)</a>
+      </div>
+    </div>
+    <div class="shots">
+      <img src="img/browser-01-sync.webp" width="1280" height="800" alt="Keepmark extension showing sync status" loading="lazy" />
+      <div class="pair">
+        <img src="img/browser-02-conflict.webp" width="1280" height="800" alt="Conflict choice with merge preview" loading="lazy" />
+        <img src="img/browser-04-dark.webp" width="1280" height="800" alt="Dark theme" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="server" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Keepmark Server</span>
+      <h2>Run your own sync service</h2>
+      <p class="lead">
+        A drop-in replacement for the xBrowserSync API. Official xBrowserSync apps and
+        Keepmark apps work unchanged. Optional: Keepmark works on any xBrowserSync service.
+      </p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Same contract</h3>
+        <p>Same endpoints, error codes and MongoDB layout, byte-identical v1.1 responses. No user migration.</p>
+      </div>
+      <div class="card">
+        <h3>Safer writes</h3>
+        <p>Every conditional write is an atomic compare-and-swap: two clients pushing at once can no longer silently lose a sync.</p>
+      </div>
+      <div class="card">
+        <h3>Easy to run</h3>
+        <p>Docker Compose with MongoDB and rolling backups, healthchecks, throttling and sync IDs truncated in every log line.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px">
+      <code>docker pull keepmark/keepmark-api</code>
+      &nbsp;·&nbsp; <a href="https://hub.docker.com/r/keepmark/keepmark-api">Docker Hub</a>
+      &nbsp;·&nbsp; <a href="https://github.com/Keepmark/KeepmarkApi">Source and docs</a>
+    </p>
+  </div>
+</section>
+
+<section id="get" class="get">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Get it</span>
+      <h2>Start in a minute</h2>
+      <p class="lead">Install Keepmark, then create a new sync or link the one you already use with xBrowserSync.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Chrome, Edge, Brave</h3>
+        <p>Install from the Chrome Web Store. Works in every Chromium-based browser.</p>
+        <a class="btn btn-solid" href="https://chromewebstore.google.com/detail/jaaekkbgpeiikepahjelfbkfgpjphbhb">Add to Chrome</a>
+      </div>
+      <div class="card">
+        <h3>Firefox <span class="badge">AMO soon</span></h3>
+        <p>The Mozilla-signed <code>.xpi</code> is in the latest release. Open it in Firefox to install.</p>
+        <a class="btn btn-solid" href="https://github.com/Keepmark/KeepmarkApp/releases/latest">Download .xpi</a>
+      </div>
+      <div class="card" id="get-android">
+        <h3>Android <span class="badge">Play closed testing</span></h3>
+        <ol class="steps">
+          <li>Join the <a href="https://groups.google.com/g/keepmark-testers">keepmark-testers</a> group with your Play Store Google account.</li>
+          <li>Opt in to the test: <a href="https://play.google.com/apps/testing/com.keepmark.mobile">become a tester</a>.</li>
+          <li>Install from <a href="https://play.google.com/store/apps/details?id=com.keepmark.mobile">Google Play</a>.</li>
+        </ol>
+        <p>Or install the APK directly:</p>
+        <a class="btn btn-line" href="https://github.com/Keepmark/KeepmarkMobile/releases/latest">Download APK</a>
+      </div>
+      <div class="card">
+        <h3>Self-hosted server</h3>
+        <p>Run Keepmark Server with Docker Compose, then point any Keepmark or xBrowserSync app at it.</p>
+        <a class="btn btn-line" href="https://github.com/Keepmark/KeepmarkApi">Setup guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <p><strong style="color:#fff">Keepmark</strong> · independent, compatible with the xBrowserSync protocol.</p>
+      <p>Not affiliated with or endorsed by xBrowserSync.</p>
+      <p>Contact: <a href="mailto:keepmark@proton.me">keepmark@proton.me</a></p>
+    </div>
+    <div class="foot-links">
+      <a href="https://github.com/Keepmark">GitHub</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/Keepmark/KeepmarkMobile/issues">Report an issue</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
