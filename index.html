@@ -28,6 +28,7 @@
       <a class="brand" href="./"><img src="img/icon.svg" alt="" width="36" height="36" />Keepmark</a>
       <div class="nav-links">
         <a href="#features">Features</a>
+        <a href="#qr">Link by QR</a>
         <a href="#android">Android</a>
         <a href="#browsers">Browsers</a>
         <a href="#server">Server</a>
@@ -41,7 +42,9 @@
         <p class="lead">
           Keepmark keeps the same bookmarks on all your browsers and your Android
           phone. Everything is encrypted on your device before it leaves: the
-          server stores only ciphertext, and your password never leaves the device.
+          server stores only ciphertext, and your password is never sent to it.
+          Linking a phone by QR hands the password from your browser to your own
+          phone, directly and only when you ask.
         </p>
         <div class="cta">
           <a class="btn btn-primary" href="#get">Get Keepmark</a>
@@ -62,6 +65,36 @@
     <p>Already using xBrowserSync? Keepmark opens your existing sync on any xBrowserSync service. Nothing to migrate.</p>
   </div>
 </div>
+
+<section id="qr" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Browser ⇄ Android</span>
+      <h2>From browser to phone in one scan</h2>
+      <p class="lead">Putting your phone on the sync you already use in the browser used to mean typing the service, the sync ID and the password. Now the browser manager shows a connection QR and the phone reads it: service, sync ID and password arrive together, ready to review.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><path d="M15 15h2v2h-2zM19 15h2v6h-2zM15 19h2v2h-2z"/></svg></div>
+        <h3>Show the code</h3>
+        <p>In the Keepmark browser manager the Android card says “Connect Keepmark on your phone”: choose “Show connection QR” and verify your sync password.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3l2-3h8l2 3h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
+        <h3>Scan it on Android</h3>
+        <p>Open Keepmark for Android → Connect → Existing sync → “Scan QR from browser”. The camera is requested only while you scan, and no image is saved.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Review, then link</h3>
+        <p>The phone shows the service and the abbreviated sync ID before anything is sent, then you choose the direction: server copy, merge, or the phone's copy.</p>
+      </div>
+    </div>
+
+    <p class="note">The connection QR carries your password in readable form, so show it only to your own device: the browser erases it after 60 seconds or when the window loses focus, and a captured copy stays usable. Nothing is stored for it, and manual linking is always available.</p>
+  </div>
+</section>
 
 <section id="features">
   <div class="wrap">
@@ -114,6 +147,8 @@
       <p class="lead">A native app for Android 10 and later, built around privacy.</p>
       <ul class="checks">
         <li><strong>Encrypted on the phone too:</strong> local database with SQLCipher, credentials in the Android KeyStore.</li>
+        <li><strong>Link a browser by QR:</strong> scan the connection code from the Keepmark browser manager; the credentials travel between your own devices, never through the server.</li>
+        <li><strong>Select several items</strong> and move or delete them together, with a short Undo.</li>
         <li><strong>App lock</strong> with fingerprint or device PIN, with a relock time you choose.</li>
         <li><strong>Share to Keepmark</strong> from any app: the add form opens already filled in.</li>
         <li><strong>Fast search</strong>, pinned and recently added bookmarks, clickable breadcrumb, folders first.</li>
@@ -140,6 +175,8 @@
       <p class="lead">An extension for Chrome, Edge and Brave (Manifest V3) and for Firefox.</p>
       <ul class="checks">
         <li><strong>Automatic sync</strong> of toolbar, menu and other bookmarks, plus a “Sync now” button.</li>
+        <li><strong>Link your phone by QR</strong> from the manager: no service, sync ID or password to type on the phone.</li>
+        <li><strong>Choose your service</strong> from eight public hosts with country, size limit and API version, or from the custom URLs you already use.</li>
         <li><strong>Toolbar icon</strong> that follows your theme and shows at a glance whether you are in sync.</li>
         <li><strong>Clear conflicts</strong> with a merge preview, never resolved behind your back.</li>
         <li><strong>No access</strong> to the pages you visit.</li>
