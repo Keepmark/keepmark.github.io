@@ -44,8 +44,8 @@
           phone. Everything is encrypted on your device before it leaves: the
           server stores only ciphertext, and your password is never sent to it.
           Keep several syncs side by side — work, home, family — and switch in a
-          click. Linking a phone by QR hands the password from your browser to
-          your own phone, directly and only when you ask.
+          click. Linking a phone by QR hands the sync's key, never the password,
+          from your browser to your own phone, directly and only when you ask.
         </p>
         <div class="cta">
           <a class="btn btn-primary" href="#get">Get Keepmark</a>
@@ -72,14 +72,14 @@
     <div class="section-head">
       <span class="eyebrow">Browser ⇄ Android</span>
       <h2>From browser to phone in one scan</h2>
-      <p class="lead">Putting your phone on the sync you already use in the browser used to mean typing the service, the sync ID and the password. Now the browser manager shows a connection QR and the phone reads it: service, sync ID and password arrive together, ready to review.</p>
+      <p class="lead">Putting your phone on the sync you already use in the browser used to mean typing the service, the sync ID and the password. Now the browser manager shows a connection QR and the phone reads it: service, sync ID and the sync's key arrive together, ready to review. The password never leaves the browser.</p>
     </div>
 
     <div class="grid grid-3">
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><path d="M15 15h2v2h-2zM19 15h2v6h-2zM15 19h2v2h-2z"/></svg></div>
         <h3>Show the code</h3>
-        <p>In the Keepmark browser manager the Android card says “Connect Keepmark on your phone”: choose “Show connection QR” and verify your sync password.</p>
+        <p>In the Keepmark browser manager the Android card says “Connect Keepmark on your phone”: choose “Show connection QR”. If you set a sync lock, enter its password first.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3l2-3h8l2 3h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
@@ -93,7 +93,7 @@
       </div>
     </div>
 
-    <p class="note">The connection QR carries your password in readable form, so show it only to your own device: the browser erases it after 60 seconds or when the window loses focus, and a captured copy stays usable. Nothing is stored for it, and manual linking is always available.</p>
+    <p class="note">The connection QR carries the sync's encryption key, not your password: anyone with a copy can read and change that sync's bookmarks, so show it only to your own device. The browser erases it after 60 seconds or when the window loses focus, and a captured copy stays usable. Nothing is stored for it, a sync lock in the browser keeps others from showing it, and manual linking is always available. Keepmark for Android 1.0.247 or later is needed to read it.</p>
   </div>
 </section>
 
